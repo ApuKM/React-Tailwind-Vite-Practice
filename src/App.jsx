@@ -1,12 +1,16 @@
-import React from 'react';
-import "./App.css"
-import Navbar from './components/Navbar/Navbar';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import PricingOption from "./components/Pricing/PricingOption";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+      <main>
+        <PricingOption />
+      </main>
+    </>
   );
 };
 

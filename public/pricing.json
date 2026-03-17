@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": 15,
+    "duration": "month",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "1 free fitness assessment",
+      "Open gym hours"
+    ],
+    "popular": false
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": 30,
+    "duration": "month",
+    "features": [
+      "All Basic features",
+      "Group classes (Yoga, Zumba)",
+      "2 personal training sessions",
+      "Diet plan guidance"
+    ],
+    "popular": true
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": 50,
+    "duration": "month",
+    "features": [
+      "All Standard features",
+      "Unlimited personal training",
+      "Access to sauna & spa",
+      "Priority support",
+      "Customized workout plan"
+    ],
+    "popular": false
+  },
+  {
+    "id": 4,
+    "name": "Annual Plan",
+    "price": 500,
+    "duration": "year",
+    "features": [
+      "All Premium features",
+      "2 months free",
+      "Free gym merchandise",
+      "Priority booking for classes"
+    ],
+    "popular": false
+  }
+]

@@ -31,13 +31,15 @@ const Navbar = () => {
   const links = navLinks.map((link) => <Link key={link.id} link={link} />);
   return (
     <nav className="container mx-auto py-5">
-       <ul
-        className={`md:hidden absolute left-2 top-14 bg-transparent  pr-8 py-4 shadow-md space-y-2 ${
-          open ? "block" : "hidden"
-        }`}
-      >
-        {links}
-      </ul>
+   <ul
+  className={`md:hidden absolute top-14 left-0 w-[60%] h-full mt-2
+  backdrop-blur-md bg-blue-900/20 z-10 rounded-md
+  pl-2 pr-4 py-4 shadow-md space-y-4 
+  transition-all duration-500 ease-in-out
+  ${open ? "translate-x-0" : "-translate-x-full"}`}
+>
+  {links}
+</ul>
       <div className="flex justify-between items-center relative">
         <div className="flex items-center gap-10">
           {open ? (
@@ -49,7 +51,7 @@ const Navbar = () => {
           <img src="/src/assets/hero.png" alt="" className="w-8" />
         </div>
         <ul className="md:flex gap-4 hidden">{links}</ul>
-        <button>Sign In</button>
+        <button className="btn btn-soft outline-none">Sign In</button>
       </div>
     </nav>
   );
