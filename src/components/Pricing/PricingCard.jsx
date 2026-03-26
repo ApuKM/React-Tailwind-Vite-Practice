@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 const PricingCard = ({ item }) => {
   const { name, price, duration, features, popular } = item;
 
   return (
     <div
-      className={`relative rounded-2xl p-6 shadow-lg border transition duration-300 hover:translate-y-1 bg-blue-900/30
+      className={`relative rounded-2xl p-6 shadow-lg border transition duration-300 hover:translate-y-1 bg-blue-900/30 flex flex-col
       ${popular ? "border-blue-500" : "border-gray-700"}`}
     >
       {/* Popular badge */}
@@ -20,20 +20,19 @@ const PricingCard = ({ item }) => {
       {/* Price */}
       <p className="text-3xl font-semibold mb-4">
         ${price}
-        <span className="text-base font-normal text-white">
-          /{duration}
-        </span>
+        <span className="text-base font-normal text-white">/{duration}</span>
       </p>
-
-      {/* Features */}
-      <ul className="space-y-2 mb-6">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-center gap-2 text-gray-400">
-            <span className="text-green-500">✔</span>
-            {feature}
-          </li>
-        ))}
-      </ul>
+      <div className="flex-1">
+        {/* Features */}
+        <ul className="space-y-2 mb-6">
+          {features.map((feature, index) => (
+            <li key={index} className="flex items-center gap-2 text-gray-400">
+              <span className="text-green-500">✔</span>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Button */}
       <button
